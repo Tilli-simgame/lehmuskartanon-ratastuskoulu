@@ -1,103 +1,153 @@
-/* Vieraskirjan ja hoitopäikyn tyylit */
+/* Retro 2000s Guestbook Styles (Image-inspired) */
 
 .guestbook-container,
 .horse-diary-container {
     margin-top: 20px;
-    text-align: left;
-    background: #fff;
-    border: 3px double var(--border-color, #ccc);
-    padding: 15px;
-    max-width: 600px;
+    text-align: center;
+    /* Centered content like in the image */
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4b0082;
+    /* Indigo/Purple text from image */
 }
 
+/* Header image handling */
+.guestbook-header-img {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Section dividers */
+.guestbook-divider {
+    border: none;
+    border-top: 1px solid #999;
+    margin: 15px 0;
+    width: 100%;
+}
+
+/* Message styling - mimic the image layout */
+.messages-list {
+    margin-top: 30px;
+}
+
+.message-item {
+    margin-bottom: 40px;
+    padding: 0 20px 20px 20px;
+    border-bottom: 1px solid #aaa;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.message-meta {
+    margin-bottom: 15px;
+    display: block;
+    /* Take full width to allow left alignment */
+}
+
+.meta-row {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2px;
+}
+
+.meta-label {
+    font-weight: bold;
+    text-align: right;
+    width: 140px;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+.meta-value {
+    text-align: left;
+    flex: 1;
+    min-width: 200px;
+}
+
+.message-text {
+    margin: 15px 0;
+    max-width: 100%;
+    text-align: left;
+    white-space: pre-wrap;
+}
+
+.message-date {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 150px;
+    /* Alihan kanssa samaan linjaan (140px label + 10px padding) */
+}
+
+/* Reply/Staff comment block */
+.staff-reply {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #ff69b4;
+    /* Pinkish-red for replies in image */
+    font-style: italic;
+}
+
+/* Form styling - kept simple but functional */
 .guestbook-form,
 .horse-diary-form {
-    margin-bottom: 30px;
-    border-bottom: 2px dashed var(--border-color, #ccc);
-    padding-bottom: 20px;
-}
-
-.guestbook-form h3,
-.horse-diary-form h3 {
-    margin-top: 0;
-    color: var(--heading-color, #000);
+    background: #f0f0ff;
+    border: 1px solid #999;
+    padding: 20px;
+    margin-bottom: 40px;
+    text-align: left;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .form-group label {
-    display: block;
+    width: 60px;
     font-weight: bold;
-    margin-bottom: 5px;
 }
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    font-family: inherit;
-    box-sizing: border-box;
+    flex: 1;
+    border: 1px solid #999;
+    padding: 5px;
 }
 
 .form-group textarea {
-    height: 100px;
-    resize: vertical;
+    height: 80px;
 }
 
 .submit-btn {
-    background: var(--link-color, #0000ff);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
+    background: #e0e0ff;
+    border: 1px solid #666;
+    padding: 5px 15px;
     cursor: pointer;
     font-weight: bold;
+    color: #4b0082;
 }
 
 .submit-btn:hover {
-    background: var(--visited-link-color, #551a8b);
+    background: #ccccff;
 }
 
-.messages-list {
-    margin-top: 20px;
-}
-
-.message-item {
-    background: #f9f9f9;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-left: 5px solid var(--border-color, #ccc);
-}
-
-.message-header {
-    font-weight: bold;
-    font-size: 0.9em;
-    margin-bottom: 5px;
+/* Navigation links (Sivut, Kirjoita jne) */
+.gb-nav {
     display: flex;
     justify-content: space-between;
+    font-size: 0.9em;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    padding: 5px 0;
+    margin-bottom: 15px;
 }
 
-.message-date {
-    color: #666;
-    font-weight: normal;
-}
-
-.message-text {
-    line-height: 1.4;
-    white-space: pre-wrap;
-}
-
-.loading,
-.error-message {
-    font-style: italic;
-    text-align: center;
-    padding: 20px;
-}
-
-.error-message {
-    color: red;
+.gb-nav a {
+    color: #4b0082;
+    text-decoration: underline;
 }
