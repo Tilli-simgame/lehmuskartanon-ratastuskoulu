@@ -7,7 +7,7 @@ theme: muuta
 <h1>Copyrights & Grafiikat</h1>
 
 <center>
-  <img class="divider-icon" src="{{ '/assets/img/vine25.gif' | relative_url }}" alt="Divider">
+  <img class="divider-icon" src="{{ '/assets/img/gummybears.png' | relative_url }}" alt="Divider">
 </center>
 
 <p>
@@ -21,7 +21,7 @@ theme: muuta
 </ul>
 
 <center>
-  <img class="divider-icon" src="{{ '/assets/img/vine25.gif' | relative_url }}" alt="Divider">
+  <img class="divider-icon" src="{{ '/assets/img/gummybears.png' | relative_url }}" alt="Divider">
 </center>
 
 <h3>Grafiikka</h3>

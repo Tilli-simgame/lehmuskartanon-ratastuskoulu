@@ -1,10 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --bg-image: url('../img/bluey.jpg');
   --bg-color: #add8e6;
   --text-color: #ff00ff;
   --heading-color: #0000ff;
   --link-color: #0000ff;
-  --link-visited-color: #800080;
+  --link-visited-color: #a020f0;
   --link-hover-bg: #ffff00;
   --link-hover-text: #000;
   --main-content-bg: rgba(255, 255, 255, 0.8);
@@ -17,8 +21,6 @@ body.theme-yleista {
   --bg-color: #2d5a27;
   --text-color: #ffffff;
   --heading-color: #ffff00;
-  --link-color: #ffff00;
-  --link-visited-color: #98fb98;
   --border-color: #ffff00;
   --shadow-color: #000000;
   --main-content-bg: rgba(0, 0, 0, 0.6);
@@ -29,11 +31,19 @@ body.theme-horses {
   --bg-color: #2b0040;
   --text-color: #ffffff;
   --heading-color: #e0b0ff;
-  --link-color: #f0e6ff;
-  --link-visited-color: #d8bfd8;
   --border-color: #e0b0ff;
   --shadow-color: #4b0082;
   --main-content-bg: rgba(43, 0, 64, 0.7);
+}
+
+body.theme-horse-profile {
+  --bg-image: url('../img/pastelstarz.gif');
+  --bg-color: #fce4ff;
+  --text-color: #8a2be2;
+  --heading-color: #8a2be2;
+  --border-color: #ffb6c1;
+  --shadow-color: #ff69b4;
+  --main-content-bg: rgba(255, 255, 255, 0.85);
 }
 
 body.theme-toiminta {
@@ -41,8 +51,6 @@ body.theme-toiminta {
   --bg-color: #ffc0cb;
   --text-color: #d10074;
   --heading-color: #ff1493;
-  --link-color: #c71585;
-  --link-visited-color: #db7093;
   --border-color: #ff69b4;
   --shadow-color: #ffb6c1;
   --main-content-bg: rgba(255, 255, 255, 0.85);
@@ -53,8 +61,6 @@ body.theme-hoitajat {
   --bg-color: #000022;
   --text-color: #ffffff;
   --heading-color: #00ffff;
-  --link-color: #ffff00;
-  --link-visited-color: #ffd700;
   --border-color: #00ffff;
   --shadow-color: #000080;
   --main-content-bg: rgba(0, 0, 34, 0.75);
@@ -65,8 +71,6 @@ body.theme-muuta {
   --bg-color: #e8f5e9;
   --text-color: #2e7d32;
   --heading-color: #c62828;
-  --link-color: #c62828;
-  --link-visited-color: #8e24aa;
   --border-color: #43a047;
   --shadow-color: #a5d6a7;
   --main-content-bg: rgba(255, 255, 255, 0.9);
@@ -129,7 +133,7 @@ hr {
 
 body.theme-yleista hr {
   background-image: url('../img/vine11.gif');
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
   border: 0;
@@ -146,6 +150,18 @@ body.theme-horses hr {
   background-color: transparent;
   border: 0;
   height: 15px;
+  width: 100%;
+  margin: 15px auto;
+  background-size: contain;
+}
+
+body.theme-horse-profile hr {
+  background-image: url('../img/pinkstars.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: 0;
+  height: 25px;
   width: 100%;
   margin: 15px auto;
   background-size: contain;
@@ -176,7 +192,7 @@ body.theme-hoitajat hr {
 }
 
 body.theme-muuta hr {
-  background-image: url('../img/vine25.gif');
+  background-image: url('../img/gummybears.png');
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
@@ -204,23 +220,30 @@ body.theme-hoitajat .main-content {
 body.theme-horses .main-content {
   background-color: var(--main-content-bg);
   background-clip: padding-box;
-  /* Ensures background doesn't show under the border hearts */
-  /* Use border-image with the 3x3 grid image (99x99px) */
   border: 22px solid transparent;
   border-image-source: url('../img/heart-border.png');
   border-image-slice: 33;
-  /* 99px / 3 = exactly 33px */
   border-image-width: 22px;
   border-image-repeat: round;
-
   border-radius: 0;
   box-shadow: none;
   position: relative;
+}
 
-  /* Reset mask/filter just in case */
-  -webkit-mask: none;
-  mask: none;
-  filter: none;
+body.theme-horse-profile .main-content {
+  background-color: var(--main-content-bg);
+  border: 6px dotted var(--border-color);
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  box-shadow: none;
+}
+
+.main-content img {
+  max-width: 100%;
+  height: auto;
 }
 
 body.theme-yleista .main-content img {
@@ -229,7 +252,6 @@ body.theme-yleista .main-content img {
   background-color: #fff;
   margin: 15px auto 5px auto;
   display: block;
-  max-width: 100%;
 }
 
 .main-content small {
@@ -311,6 +333,29 @@ body.theme-hoitajat .main-content li::before {
   background-repeat: no-repeat;
 }
 
+body.theme-horse-profile .main-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+body.theme-horse-profile .main-content li {
+  position: relative;
+  padding-left: 25px;
+  list-style: none;
+}
+
+body.theme-horse-profile .main-content li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  background-image: url('../img/pink20.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .main-content ul,
 .main-content ol {
   text-align: left;
@@ -378,4 +423,50 @@ body.theme-hoitajat .main-content li::before {
   font-style: italic;
   color: var(--text-color);
   margin-top: 30px;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  h2,
+  h3 {
+    font-size: 1.4em;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .main-content {
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .nav-section {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  hr {
+    width: 90%;
+  }
+
+  body.theme-horses .main-content {
+    border-width: 12px;
+    border-image-width: 12px;
+  }
+
+  .nav-item {
+    font-size: 0.95em;
+  }
 }

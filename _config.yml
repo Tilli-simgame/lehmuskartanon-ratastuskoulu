@@ -10,3 +10,8 @@ theme: minima # We will override this with our own layouts
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+collections:
+  hevoset:
+    output: true
+    permalink: /hevoset/:path/
