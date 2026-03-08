@@ -8,11 +8,11 @@ theme: yleista
 
 <hr>
 
-Tarhaaminen on olennainen osa hevosten hyvinvointia Lehmuskartanon Ratsastuskeskuksessa. Hevoset pääsevät päivittäin ulos viettämään aikaa tilavissa ja turvallisissa tarhoissa. Ulkoilu tukee hevosten fyysistä ja henkistä hyvinvointia, antaa niille mahdollisuuden liikkua vapaasti ja seurustella toisten hevosten kanssa 🐎.
+Tarhaaminen on olennainen osa hevosten hyvinvointia Lehmuskartanon Ratsastuskeskuksessa. Hevoset pääsevät päivittäin ulos viettämään aikaa tilavissa ja turvallisissa tarhoissa. Ulkoilu tukee hevosten fyysistä ja henkistä hyvinvointia, antaa niille mahdollisuuden liikkua vapaasti ja seurustella toisten hevosten kanssa.
 
 ---
 
-### Tarhausaikataulu ⏰
+### Tarhausaikataulu
 Hevoset tarhataan päivittäin tietyn aikataulun mukaan, jotta jokainen hevonen saa tarpeeksi aikaa ulkona. Tarhausaika vaihtelee vuodenajan ja sään mukaan:
 
 *   **Kesäaikaan:** hevoset viettävät ulkona suurimman osan päivästä, aamusta iltaan, noin klo 8.00–18.00.
@@ -29,7 +29,7 @@ Hevoset tarhataan yksilöllisten tarpeiden mukaan:
 
 ---
 
-### Tarhojen Kunnossapito 🧹
+### Tarhojen Kunnossapito
 Lehmuskartanon tarhat ovat tilavia ja turvallisia. Tarhoissa on riittävästi tilaa liikkumiseen, ja ne on varustettu turvallisilla aidoilla, jotka tarkastetaan säännöllisesti. Tarhat pidetään puhtaina ja kuivina ympäri vuoden, jotta hevosten jalkojen ja kavioiden kunto pysyy hyvänä.
 
 ---
@@ -43,7 +43,7 @@ Tarhoissa on tarjolla:
 
 ---
 
-### Sääolosuhteet ja Tarhaus 🌤️
+### Sääolosuhteet ja Tarhaus
 Hevosten tarhaus riippuu sääolosuhteista:
 
 *   **Hyvällä säällä:** Hevoset pääsevät ulkoilemaan pitkiä aikoja.

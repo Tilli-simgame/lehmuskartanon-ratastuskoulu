@@ -16,7 +16,7 @@ theme: yleista
 
 Katri on tallin pitkäaikainen hevosenhoitaja, jolla on vuosien kokemus erilaisten hevosten kanssa työskentelemisestä. Hän on kasvanut hevosten ympäröimänä ja omaa luonnollisen kyvyn ymmärtää niiden tarpeita. Katri on tarkka ja huolellinen, eikä yksikään yksityiskohta jää huomaamatta, olipa kyse sitten hevosten päivittäisestä ruokinnasta tai varusteiden puhdistuksesta. Hänen rauhallinen ja ystävällinen asenteensa tekee hänestä myös loistavan tiimin jäsenen, joka on aina valmis auttamaan muita tallilaisia.
 
-**Lempipuuha tallilla:** Hevosten harjaaminen ja hoitaminen, erityisesti varsojen käsittely 🐴.
+**Lempipuuha tallilla:** Hevosten harjaaminen ja hoitaminen, erityisesti varsojen käsittely.
 
 <hr>
 
