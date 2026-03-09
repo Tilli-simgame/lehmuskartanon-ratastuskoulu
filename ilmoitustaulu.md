@@ -14,6 +14,7 @@ theme: muuta
         <ul>
             <li><strong>Kategoriat:</strong> Käytä ilmoituksen alussa tunnistetta kuten [myydään], [ostetaan], [vaihdetaan], [etsitään] tai [yleinen].</li>
             <li><strong>Pysy aiheessa:</strong> Ilmoitukset on tarkoitettu virtuaalihevosaiheiseen kaupankäyntiin ja ilmoituksiin.</li>
+            <li><strong>Muista maili:</strong> Muista ilmoittaa e-mailisi jos haluat että sinuun otetaan yhteyttä!</li>
             <li><strong>Ei roskapostia:</strong> Asiattomat ilmoitukset poistetaan.</li>
         </ul>
     </div>
@@ -23,7 +24,7 @@ theme: muuta
         <span class="board-toolbar-info">
             Näytetään <span id="current-range">...</span> / <span id="total-count">...</span> ilmoitusta
         </span>
-        <a href="{{ '/ilmoitustaulu/kirjoita.html' | relative_url }}">✏️ Jätä ilmoitus</a>
+        <a href="{{ '/ilmoitustaulu/kirjoita.html' | relative_url }}">Jätä ilmoitus</a>
     </div>
 
     <div class="board-feed" id="messages-list">
@@ -33,7 +34,7 @@ theme: muuta
     <div class="board-pagination">
         <a href="#" id="prev-page" class="nav-disabled">← Edelliset</a>
         <span class="board-pagination-info">
-            <a href="{{ '/ilmoitustaulu/kirjoita.html' | relative_url }}">✏️ Jätä ilmoitus</a>
+            <a href="{{ '/ilmoitustaulu/kirjoita.html' | relative_url }}">Jätä ilmoitus</a>
         </span>
         <a href="#" id="next-page" class="nav-disabled">Seuraavat →</a>
     </div>
@@ -132,7 +133,7 @@ theme: muuta
                     </div>
                     <div class="board-post-content">
                         <div class="board-post-title">${titleDisplay}</div>
-                        ${bodyHtml ? `<div class="board-post-body" style="font-size:0.9em; margin-bottom:10px; color:#444;">${bodyHtml}</div>` : ''}
+                        ${bodyHtml ? `<div class="board-post-body" style="font-size:0.9em; margin-bottom:10px;">${bodyHtml}</div>` : ''}
                         <div class="board-post-meta">${metaParts.join(' · ')}</div>
                     </div>
                 </div>`;

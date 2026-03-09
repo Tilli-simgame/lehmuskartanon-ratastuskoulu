@@ -14,6 +14,7 @@ theme: muuta
     <div class="board-rules">
         <ul>
             <li><strong>Ohje:</strong> Voit lisätä ilmoituksesi alkuun tagin asettamalla sen hakasulkeisiin, esim. <span class="board-tag tag-sell">[myydään]</span>, <span class="board-tag tag-buy">[ostetaan]</span>, <span class="board-tag tag-trade">[vaihdetaan]</span> tai <span class="board-tag tag-general">[etsitään]</span>. Se väritetään automaattisesti ilmoitustaululla.</li>
+            <li><strong>Muista maili:</strong> Muista ilmoittaa e-mailisi jos haluat että sinuun otetaan yhteyttä!</li>
             <li><strong>Pysy aiheessa:</strong> Ei spämmäystä tai asiattomuuksia.</li>
         </ul>
     </div>
