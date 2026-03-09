@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Kirjoita vieraskirjaan
+title: Lehmuskartanon Ratsastuskoulun vieraskirja
 theme: muuta
 ---
 
@@ -8,36 +8,48 @@ theme: muuta
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
 <div class="guestbook-container">
-    <h1>Kirjoita vieraskirjaan</h1>
+    <h1>Lehmuskartanon Ratsastuskoulu</h1>
+    <h2>VIERASKIRJA</h2>
+    <img src="{{ '/assets/img/uni1.gif' | relative_url }}" alt="" class="guestbook-header-img">
+
+    <div class="guestbook-rules">
+        <ul>
+            <li><strong>Ole kohtelias:</strong> Kirjoita asiallisesti ja ystävällisesti. Muista, että ruudun takana on toinen ihminen.</li>
+            <li><strong>Pysy aiheessa:</strong> Vieraskirja on tarkoitettu virtuaalihevosaiheiseen keskusteluun. Pidä kommentit aiheessa.</li>
+            <li><strong>Ei mainostamista:</strong> Tämä ei ole mainospalsta!</li>
+            <li><strong>Ei vihapuhetta tai spämmäystä:</strong> Asiaton kielenkäyttö, kiroilu ja saman viestin toistaminen (spämmi) johtaa viestin poistoon.</li>
+            <li><strong>Omalla nimimerkillä:</strong> Käytä mielellään virtuaali nikkiäsi.</li>
+        </ul>
+    </div>
 
     <div class="gb-nav">
         <a href="{{ '/vieraskirja.html' | relative_url }}"> Takaisin vieraskirjaan</a>
     </div>
 
     <div class="guestbook-form" id="gb-form">
-        <h3>Jätä terveisesi!</h3>
+        <h3>Kiitos :)!</h3>
         <form id="gb-form-el">
             <div class="form-group">
                 <label for="name">Nimi :</label>
                 <input type="text" id="name" name="name" required placeholder="Nimesi">
             </div>
             <div class="form-group">
-                <label for="email">S-posti :</label>
+                <label for="email">@ :</label>
                 <input type="email" id="email" name="email" placeholder="Sähköpostiosoitteesi (valinnainen)">
             </div>
             <div class="form-group">
-                <label for="website">Talli:</label>
+                <label for="website">Tallin nimi:</label>
                 <input type="text" id="website" name="website" placeholder="Talli">
             </div>
             <div class="form-group">
-                <label for="url">Tallin URL:</label>
+                <label for="url">www-osoite:</label>
                 <input type="url" id="url" name="url" placeholder="https://...">
             </div>
             <div class="form-group">
                 <label for="rating">Arvosana :</label>
                 <input type="text" id="rating" name="rating" placeholder="Arvosana tallille">
             </div>
-            <div class="form-group" style="flex-direction: column; align-items: stretch;">
+            <div class="form-group">
                 <label for="message">Viesti :</label>
                 <textarea id="message" name="message" required placeholder="Terveisesi..."></textarea>
             </div>
@@ -107,3 +119,7 @@ theme: muuta
         return div.innerHTML;
     }
 </script>
+
+<div style="margin-top: 30px; text-align: center; font-size: 0.8em; color: #999;">
+    inspired by freebok.net
+</div>

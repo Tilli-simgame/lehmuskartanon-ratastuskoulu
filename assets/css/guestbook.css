@@ -9,14 +9,33 @@
     margin-left: auto;
     margin-right: auto;
     font-family: Arial, Helvetica, sans-serif;
-    color: #4b0082;
-    /* Indigo/Purple text from image */
+    color: #2e7d32;
+    /* Theme text color */
 }
 
 /* Header image handling */
 .guestbook-header-img {
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+}
+
+.guestbook-rules {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    padding: 15px;
+    border: 1px dashed #999;
+    font-size: 0.9em;
+    background: #ffffffaa;
+}
+
+.guestbook-rules ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.guestbook-rules li {
+    margin-bottom: 8px;
 }
 
 /* Section dividers */
@@ -91,29 +110,31 @@
     font-style: italic;
 }
 
-/* Form styling - kept simple but functional */
+/* Form styling */
 .guestbook-form,
 .horse-diary-form {
-    border: 1px solid #999;
     padding: 20px;
     margin-bottom: 40px;
     text-align: left;
 }
 
 .form-group {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    /* Align label to top of textarea/input */
 }
 
 .form-group label {
-    width: 60px;
+    width: 120px;
     font-weight: bold;
 }
 
 .form-group input,
 .form-group textarea {
     flex: 1;
+    max-width: 400px;
+    /* Prevent fields from being too long */
     border: 1px solid #999;
     padding: 5px;
 }
@@ -128,11 +149,11 @@
     padding: 5px 15px;
     cursor: pointer;
     font-weight: bold;
-    color: #4b0082;
+    color: #2e7d32;
 }
 
 .submit-btn:hover {
-    background: #f0f0ff;
+    background: #e8f5e9;
     /* Subtle tint on hover instead of full purple */
 }
 
@@ -148,6 +169,45 @@
 }
 
 .gb-nav a {
-    color: #4b0082;
+    color: #2e7d32;
     text-decoration: underline;
+}
+
+/* Navigation Grid (Pagination) */
+.gb-pagination {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    border-top: 1px solid #2e7d32;
+    border-bottom: 1px solid #2e7d32;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+}
+
+/* Left column */
+.pagination-cell:nth-child(3n+1) {
+    text-align: left;
+}
+
+/* Center column */
+.pagination-cell:nth-child(3n+2) {
+    text-align: center;
+}
+
+/* Right column */
+.pagination-cell:nth-child(3n) {
+    text-align: right;
+}
+
+.pagination-cell a {
+    color: #2e7d32;
+    text-decoration: underline;
+}
+
+.pagination-cell a.nav-disabled {
+    color: #999;
+    text-decoration: none;
+    cursor: default;
+    pointer-events: none;
 }
