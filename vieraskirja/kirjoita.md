@@ -10,6 +10,7 @@ theme: muuta
 <div class="guestbook-container">
     <h1>Lehmuskartanon Ratsastuskoulu</h1>
     <h2>VIERASKIRJA</h2>
+    <hr>
     <img src="{{ '/assets/img/uni1.gif' | relative_url }}" alt="" class="guestbook-header-img">
 
     <div class="guestbook-rules">
