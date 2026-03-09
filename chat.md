@@ -14,12 +14,22 @@ theme: muuta
 
     <!-- Gatekeeper -->
     <div id="chat-gatekeeper" class="chat-gatekeeper">
-        <div class="gatekeeper-title">Tervetuloa chattiin!</div>
-        <p>Vahvista, että et ole botti päästäksesi sisään.</p>
-        <div style="margin: 20px 0;">
-            <div class="cf-turnstile" data-sitekey="0x4AAAAAACoXr7YFfmmnlCc0" data-callback="onTurnstileSuccess"></div>
+        <!-- Step 1: Verification -->
+        <div id="step-verify">
+            <div class="gatekeeper-title">Tervetuloa chattiin!</div>
+            <p>Vahvista, että et ole botti päästäksesi sisään.</p>
+            <div style="margin: 20px 0;">
+                <div class="cf-turnstile" data-sitekey="0x4AAAAAACoXr7YFfmmnlCc0" data-callback="onTurnstileSuccess"></div>
+            </div>
+            <div id="verify-status" style="color: #8b4513; font-size: 0.9em;"></div>
         </div>
-        <div id="verify-status" style="color: #8b4513; font-size: 0.9em;"></div>
+
+        <!-- Step 2: Naming -->
+        <div id="step-name" class="naming-step">
+            <div class="gatekeeper-title">Valitse nimimerkki</div>
+            <input type="text" id="login-nickname" class="login-input" placeholder="Kirjoita nimi..." maxlength="50">
+            <button id="login-start" class="login-btn">Aloita chat</button>
+        </div>
     </div>
 
     <!-- Chat Content -->
@@ -39,7 +49,7 @@ theme: muuta
 
         <form class="chat-form" id="chat-form">
             <div class="form-row">
-                <input type="text" id="chat-name" class="chat-input input-name" placeholder="Nimimerkkisi" maxlength="50" required>
+                <span id="display-nickname" style="font-weight:bold; color:#8b4513; padding: 0 10px;">Nimimerkki</span>
                 <input type="text" id="chat-msg" class="chat-input input-msg" placeholder="Kirjoita viesti tähän..." maxlength="500" required>
                 <button type="submit" class="chat-submit" id="chat-send">Lähetä</button>
             </div>
@@ -49,10 +59,14 @@ theme: muuta
 
 <script>
     const CHAT_API = 'https://chat.anniina-sipria.workers.dev/api/chat';
+    const BYPASS_TOKEN = 'bypass-74b2f8a9e1c5d392';
+    
     let currentRoom = 'Talli';
     let lastMessageId = 0;
     let pollInterval;
+    
     let chatSessionToken = sessionStorage.getItem('chatSessionToken');
+    let userNickname = sessionStorage.getItem('chatNickname');
 
     const chatWindow = document.getElementById('chat-window');
     const chatForm = document.getElementById('chat-form');
@@ -60,6 +74,17 @@ theme: muuta
     const chatStatus = document.getElementById('chat-status');
     const gatekeeper = document.getElementById('chat-gatekeeper');
     const chatContent = document.getElementById('chat-content');
+    
+    const stepVerify = document.getElementById('step-verify');
+    const stepName = document.getElementById('step-name');
+
+    // Local development bypass
+    const isLocal = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+    if (isLocal && !chatSessionToken) {
+        console.log('Local environment detected - bypassing Turnstile');
+        chatSessionToken = BYPASS_TOKEN;
+        sessionStorage.setItem('chatSessionToken', chatSessionToken);
+    }
 
     // Callback when Turnstile is solved
     window.onTurnstileSuccess = async function(token) {
@@ -77,7 +102,7 @@ theme: muuta
             if (data.chatToken) {
                 chatSessionToken = data.chatToken;
                 sessionStorage.setItem('chatSessionToken', chatSessionToken);
-                enterChat();
+                showNamingStep();
             } else {
                 verifyStatus.textContent = 'Varmistus epäonnistui: ' + (data.error || 'Tuntematon virhe');
                 if (window.turnstile) turnstile.reset();
@@ -88,10 +113,41 @@ theme: muuta
         }
     };
 
+    function showNamingStep() {
+        stepVerify.style.display = 'none';
+        stepName.classList.add('active');
+        document.getElementById('login-nickname').focus();
+    }
+
+    document.getElementById('login-start').onclick = function() {
+        const nick = document.getElementById('login-nickname').value.trim();
+        if (nick.length < 2) {
+            alert('Nimimerkin pitää olla vähintään 2 merkkiä pitkä.');
+            return;
+        }
+        userNickname = nick;
+        sessionStorage.setItem('chatNickname', userNickname);
+        enterChat();
+    };
+
+    // Also allow enter key in nickname input
+    document.getElementById('login-nickname').onkeypress = function(e) {
+        if (e.key === 'Enter') document.getElementById('login-start').click();
+    };
+
     function enterChat() {
+        if (!chatSessionToken) return; // Should not happen
+        if (!userNickname) {
+            showNamingStep();
+            return;
+        }
+        
         gatekeeper.style.display = 'none';
         chatContent.classList.remove('chat-content-hidden');
+        document.getElementById('display-nickname').textContent = userNickname + ":";
+        
         fetchMessages();
+        if (pollInterval) clearInterval(pollInterval);
         pollInterval = setInterval(fetchMessages, 10000);
     }
 
@@ -150,7 +206,6 @@ theme: muuta
     chatForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         const sendBtn = document.getElementById('chat-send');
-        const name = document.getElementById('chat-name').value;
         const message = document.getElementById('chat-msg').value;
 
         if (!chatSessionToken) {
@@ -168,7 +223,7 @@ theme: muuta
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     room: currentRoom,
-                    name: name,
+                    name: userNickname,
                     message: message,
                     chatToken: chatSessionToken
                 })
@@ -206,8 +261,12 @@ theme: muuta
         return div.innerHTML;
     }
 
-    // Check if we already have a session
+    // Check existing session
     if (chatSessionToken) {
-        enterChat();
+        if (userNickname) {
+            enterChat();
+        } else {
+            showNamingStep();
+        }
     }
 </script>

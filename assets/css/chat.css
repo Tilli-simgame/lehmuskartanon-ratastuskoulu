@@ -36,6 +36,42 @@
     font-weight: bold;
 }
 
+.naming-step {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.naming-step.active {
+    display: flex;
+}
+
+.login-input {
+    padding: 10px;
+    border: 2px solid #8b4513;
+    font-family: inherit;
+    font-size: 1.1em;
+    width: 250px;
+    text-align: center;
+}
+
+.login-btn {
+    background: #8b4513;
+    color: #fff;
+    border: 1px solid #5d2e0a;
+    padding: 10px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.login-btn:hover {
+    background: #a0522d;
+}
+
 .chat-content-hidden {
     display: none !important;
 }
