@@ -123,7 +123,11 @@ theme: muuta
 
                 // Build meta line
                 let metaParts = [];
-                metaParts.push(`<span class="author">${escapeHtml(m.name)}</span>`);
+                let authorInfo = `<span class="author">${escapeHtml(m.name)}</span>`;
+                if (m.email) {
+                    authorInfo += ` <a href="mailto:${escapeHtml(m.email)}" style="font-size:0.95em; text-decoration:none;">(${escapeHtml(m.email)})</a>`;
+                }
+                metaParts.push(authorInfo);
                 metaParts.push(formatDate(m.created_at));
 
                 return `
