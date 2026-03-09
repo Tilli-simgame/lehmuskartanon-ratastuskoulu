@@ -145,12 +145,7 @@ theme: muuta
         } catch (err) {
             messagesList.innerHTML = `<div class="board-empty" style="color:red;">
                 Yhteysvirhe: Tietokantaa tai rajapintaa ei löytynyt.<br>
-                <small>(1. Luo Cloudflaressa uusi Worker (nimellä `board`) ja D1-tietokanta.
-2. Aja `ilmoitustaulu-schema.sql` tietokannan konsolissa.
-3. Bindaa D1-tietokanta Workeriin nimellä `DB`.
-4. Lisää `TURNSTILE_SECRET_KEY` Environment Variableksi.
-5. Kopioi `ilmoitustaulu-worker.js` koodi Workeriin.
-6. Varmista, että Workerin osoite on `board.anniina-sipria.workers.dev`.)</small>
+                <small>(Varmista, että Cloudflare Worker on pystytty osoitteeseen board.anniina-sipria.workers.dev)</small>
             </div>`;
             console.error(err);
         }
