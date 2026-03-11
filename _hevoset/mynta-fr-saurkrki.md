@@ -28,5 +28,12 @@ gallery:
   - url: "https://images.ctfassets.net/s4w1llzaplel/6qijrixfEompul6Td9JkWI/b1079d0e0cdd6e8df181efc4419f8fc0/minttu-talvella.jpg"
     title: "Talvella"
     description: "Tilli (VRL-00406), toteutettu AI:n avulla."
+short_description: |
+  <p>Lempeä ja varmajalkainen, loistava vaelluksilla ja tölttiharjoituksissa. Minttu on erityisen suosittu pitkillä maastoretkillä ja keskitason askellajitunneilla. </p>
 ---
 
+<p>Minttu on viehättävä islanninhevostamma, jonka lempeä luonne ja varmat askellajit tekevät siitä täydellisen kumppanin niin vaelluksille kuin askellajitunneille. Vuonna 2012 syntynyt tamma on kehittynyt vuosien varrella luotettavaksi opetushevoseksi, joka osaa käsitellä niin kokeneita kuin aloitteleviakin ratsastajia lempeällä ja kärsivällisellä tavalla.</p>
+<p><strong>Yleisesti:</strong> Minttu on luonteeltaan rauhallinen ja tasapainoinen tamma, joka suhtautuu kaikkeen tekemiseen positiivisella ja yhteistyöhaluisella asenteella. Se on erityisen kiintynyt ihmisiin ja nauttii huomiosta, mutta osaa myös käyttäytyä arvokkaasti ja pidättyväisesti tarvittaessa. Laumassa Minttu on sopeutuvainen ja ystävällinen, eikä aiheuta koskaan ongelmia muiden hevosten kanssa.</p>
+<p><strong>Ratsailla:</strong> Minttu loistaa erityisesti maastovaelluksilla ja tölttiharjoituksissa. Sen askellajit ovat puhtaat ja miellyttävät istua, erityisesti töltti on pehmeää ja tasaista. Pitkillä maastoreiteillä Mintun varmaotteisuus ja luotettavuus pääsevät todella oikeuksiinsa - se kulkee varmajalkaisesti vaikeissakin maastoissa ja pitää päänsä kylmänä kaikissa tilanteissa. Minttu soveltuu erinomaisesti myös askellajitunneille, missä se toimii kärsivällisesti ratsastajan taitotasosta riippumatta.</p>
+<p><strong>Hoidettaessa:</strong> Minttu on esimerkillisen helppo hoidettava. Se nauttii hoitotilanteista ja on erittäin yhteistyöhaluinen kaikissa toimenpiteissä. Harjaus ja kavioiden puhdistus sujuvat rutiinilla, ja Minttu seisoo aina rauhallisesti paikallaan varustettaessa. Se on tunnettu erityisesti siitä, miten hellästi se kohtelee nuorimpia ja kokemattomimpia hoitajiaan.</p>
+<p>Kaiken kaikkiaan Minttu edustaa kaikkea sitä, mistä islanninhevoset tunnetaan: se on luotettava, monipuolinen ja miellyttävä käsitellä. Sen rauhallinen luonne ja varmat askellajit tekevät siitä ihanteellisen opetushevosen, erityisesti niille, jotka haluavat tutustua islanninhevosten erikoisaskellajeihin tai nauttia pitkistä maastoretkistä.</p>
