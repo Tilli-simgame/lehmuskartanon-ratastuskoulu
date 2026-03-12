@@ -12,6 +12,23 @@ disciplines: "este"
 disciplineLevels: "60cm"
 owner: "Tilli (VRL-00406)"
 tuoja: "Tilli (VRL-00406)"
+profile_image:
+  url: "https://images.ctfassets.net/s4w1llzaplel/1B9CZFwGf9IJ3KS4l8X6SL/364baa5e9f96c0c9995616f7f4529911/Firefly__3_.png"
+  title: "Pääkuva"
+  description: "Tilli (VRL-00406), toteutettu AI:n avulla."
+gallery:
+  - url: "https://images.ctfassets.net/s4w1llzaplel/2clr8S0IyzfcSOtJQb09VU/cf1ef35cbe628c52f26d894e4d7beb1a/Firefly__1_.png"
+    title: "Rakennekuva"
+    description: "Tilli (VRL-00406), toteutettu AI:n avulla."
+  - url: "https://images.ctfassets.net/s4w1llzaplel/3KHkqsDmmedfw5x0OCHt4v/ca142c7cedc9394421ac8525b94d606b/Firefly__2_.png"
+    title: "Ratsastuskuva"
+    description: "Tilli (VRL-00406), toteutettu AI:n avulla."
+  - url: "https://images.ctfassets.net/s4w1llzaplel/2y5nNeORD17ROlzschjEMu/a84349c4a9db78c16a061c261c2c8816/Firefly__6_.png"
+    title: "Kesälaitumella"
+    description: "Tilli (VRL-00406), toteutettu AI:n avulla."
+  - url: "https://images.ctfassets.net/s4w1llzaplel/4L6piNQXGuPSYsnMTQ4INg/3e407faec7b5244d46166a2edc17e5a3/Firefly__7_.png"
+    title: "Lepohetki"
+    description: "Tilli (VRL-00406), toteutettu AI:n avulla."
 short_description: |
   <p>Nuori ja innokas, mutta vaatii rauhallisen käsittelijän. </p>
 ---

@@ -11,6 +11,20 @@ disciplines: "koulu"
 disciplineLevels: "Helppo D"
 owner: "Tilli (VRL-00406)"
 tuoja: "Tilli (VRL-00406)"
+profile_image:
+  url: "https://images.ctfassets.net/s4w1llzaplel/4MXKCyG1PGiZXlR1xNm7ZN/86be14fb6d5140d91cda81b74dd6ea1b/Firefly__9_.png"
+  title: "Pääkuva"
+  description: "Tilli (VRL-00406), toteutettu AI:n avulla."
+gallery:
+  - url: "https://images.ctfassets.net/s4w1llzaplel/7jtZIKGK6rFU69p8SDk5Uo/5454309a4a3c5b646e46b6cdc6cffdb3/Firefly__8_.png"
+    title: "Rakennekuva"
+    description: "Tilli (VRL-00406), toteutettu AI:n avulla."
+  - url: "https://images.ctfassets.net/s4w1llzaplel/63Iy9X6uTQrkkJ8dc9b5wP/2c5ba6cc7f165a93d34a03aeee1a5709/Firefly__10_.png"
+    title: "Ratsastuskuva"
+    description: "Tilli (VRL-00406), toteutettu AI:n avulla."
+  - url: "https://images.ctfassets.net/s4w1llzaplel/7vns0uClycWMt7dvdYpQsi/18ecc2ca0ec365527f99d73d78d0b2b5/Firefly_Gemini_Flash_All_the_legs_should_be_black__no_white_markings_or_socks_386804.png"
+    title: "Ratsastuskuva"
+    description: "Tilli (VRL-00406), toteutettu AI:n avulla."
 short_description: |
   <p>Energinen ja kiltti esteratsu, joka sopii monenlaisille ratsastajille. </p>
 ---
