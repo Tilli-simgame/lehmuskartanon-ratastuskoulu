@@ -50,13 +50,13 @@ theme: toiminta
                 <select id="lesson_type" name="lesson_type" required>
                     <option value="">-- Valitse tunti --</option>
                     <option value="Alkeiskurssi">Alkeiskurssi</option>
-                    <option value="Este - alkeet">Este - alkeet</option>
-                    <option value="Este - edistyneet">Este - edistyneet</option>
-                    <option value="Kenttä - alkeet">Kenttä - alkeet</option>
-                    <option value="Kenttä - edistyneet">Kenttä - edistyneet</option>
+                    <option value="Este I">Este I</option>
+                    <option value="Este II">Este II</option>
+                    <option value="Kenttä I">Kenttä I</option>
+                    <option value="Kenttä II">Kenttä II</option>
                     <option value="Kengittäjä kurssi">Kengittäjä kurssi</option>
-                    <option value="Koulu - alkeet">Koulu - alkeet</option>
-                    <option value="Koulu - edistyneet">Koulu - edistyneet</option>
+                    <option value="Koulu I">Koulu I</option>
+                    <option value="Koulu II">Koulu II</option>
                     <option value="Talutusratsastus">Talutusratsastus</option>
                     <option value="Valjaskurssi">Valjaskurssi</option>
                     <option value="Vikellys">Vikellys</option>

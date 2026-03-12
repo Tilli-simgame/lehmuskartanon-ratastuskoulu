@@ -17,14 +17,31 @@ Viikonloppuisin järjestämme erikoistunteja, kuten maastoratsastusta, estevalme
 
 | Aika | Maanantai | Tiistai | Keskiviikko | Torstai | Perjantai | Lauantai | Sunnuntai |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **8-9:00** | Alkeiskurssi | Alkeiskurssi | Vikellys | Vikellys | Yksityistunti | Yksityistunti | - |
-| **9-10:00** | Este - alkeet | Koulu - edistyneet | Alkeiskurssi | Koulu - alkeet | Koulu - alkeet | Yksityistunti | - |
-| **10-14:00** | - | - | - | - | - | Talutusratsastus | Tallin siivous |
-| **14-15:00** | Koulu - edistyneet | Koulu - edistyneet | Este - alkeet | Este - alkeet | Yksityistunti | Talutusratsastus | Tallin siivous |
-| **15-16:00** | Kenttä - alkeet | Alkeiskurssi | Kenttä - edistyneet | Este - edistyneet | Kenttä - edistyneet | Retki/vaellus | Tallin siivous |
-| **16-17:00** | Este - alkeet | Este - alkeet | Koulu - alkeet | koulu - alkeet | Kengittäjä kurssi | Retki/vaellus | Rentoutuminen tallilla |
-| **17-18:00** | Valjaskurssi | Koulu - edistyneet | Koulu - edistyneet | Kenttä - alkeet | Este - edistyneet | Retki/vaellus | Rentoutuminen tallilla |
+| **08-09** | AK | AK | VK | VK | YT | YT | - |
+| **09-10** | ES I | KO II | AK | KO I | KO I | YT | - |
+| **10-14** | - | - | - | - | - | TR | - |
+| **14-15** | KO II | KO II | ES I | ES I | YT | TR | - |
+| **15-16** | KE I | AK | KE II | ES II | KE II | RV |- |
+| **16-17** | ES I | ES I | KO I | KO I | KK | RV | - |
+| **17-18** | VAK | KO II | KO II | KE I | ES II | RV | - |
 
+<div class="schedule-legend" style="border: 2px dashed #ff69b4; padding: 15px; margin: 20px 0; background: rgba(255, 255, 255, 0.5); text-align: left; font-size: 0.9em;">
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+    <div><strong>AK</strong> = Alkeiskurssi</div>
+    <div><strong>KO I</strong> = Koulu I</div>
+    <div><strong>KO II</strong> = Koulu II</div>
+    <div><strong>ES I</strong> = Este I</div>
+    <div><strong>ES II</strong> = Este II</div>
+    <div><strong>KE I</strong> = Kenttä I</div>
+    <div><strong>KE II</strong> = Kenttä II</div>
+    <div><strong>VK</strong> = Vikellys</div>
+    <div><strong>YT</strong> = Yksityistunti</div>
+    <div><strong>TR</strong> = Talutusratsastus</div>
+    <div><strong>RV</strong> = Retki/vaellus</div>
+    <div><strong>KK</strong> = Kenkittäjäkurssi</div>
+    <div><strong>VAK</strong> = Valjaskurssi</div>
+  </div>
+</div>
 <hr>
 
 ## Tasot ja tuntityypit
@@ -34,31 +51,95 @@ Tarjoamme tunteja kolmella eri tasolla:
 - **Keskitason ratsastajat (II):** Näillä tunneilla keskitytään ratsastuksen jatkotaitoihin, kuten temponvaihteluihin, taivutuksiin ja siirtymiin eri askellajien välillä. Harjoitukset sopivat hyvin ratsastajille, jotka hallitsevat perusavut ja haluavat kehittää taitojaan monipuolisemmin.
 - **Edistyneet ratsastajat (III):** Tunnit on suunniteltu ratsastajille, jotka hallitsevat jo perus- ja jatkotaidot. Harjoituksissa keskitytään vaativampiin tehtäviin, kuten koottuun raviin, laukannostoihin ja sulkuväistöihin.
 
-Jokaisella tunnilla osallistujat voivat valita 7 tehtävää 10 eri vaihtoehdosta ja keskittyä niihin, jotka tuntuvat tärkeimmiltä tai haastavimmilta.
-
 <hr>
 
 ## Osallistuminen ja pistejärjestelmä
-Osallistuminen tunneille on yksinkertaista! Täytä alla oleva lomake, valitse haluatko osallistua irtotunnille vai kerralla syys/kevät-kaudelle. Virtuaalitallimme tunnit ovat pääosin interaktiivisia: pääset ihan oikeasti vaikuttamaan miten ratsastustuntisi menee! Jokainen tunti tarjoaa kymmenen erilaista tehtävää, joista voit valita enintään seitsemän. Tämän lisäksi käytössäsi on 30 pistettä per tunti, jotka voit jakaa valitsemillesi tehtäville. Pisteitä voit jakaa vapaasti sen mukaan, kuinka paljon haluat panostaa kuhunkin tehtävään. Taitosi kehittyvät sitä mukaan kun käyt tunneilla ja voit itse määritellä mitä taitoja haluat milloinkin harjoitella. Jos tämä vaikutti epäselvältä, kokeile irtotuntia niin näet miten hauskaa ja helppoa tämä on!
+Talli järjestää sekä passiivisia että aktiivisia tunteja. Passiivisilla tunneilla ilmoittaudut haluamaasi ryhmään, muuta ei tarvitakaan, mutta toisaalta et saa näistä tunneista palautetta. Passiiviset tunnit tunnetaan myös "nimilista" tunteina. Aktiivisilla tunneilla sinun tulee osallistua tunnin tehtäviin ja saat palautteen suorituksistasi. Tuntitarinat kirjoitetaan [tuntikirjaan]({{ '/toiminta/tuntikirja.html' | relative_url }}). Tunntitarinan voi kirjoittaa koska vaan, mutta se pitää kirjoittaa ennen seuraavan viikon tuntien alkua! Jos et kirjoita tuntitarinaa ajoissa, et saa pisteitä kyseisestä tunnista. Pisteillä voit ostaa tallikaupasta kaikkea kivaa. Jos tämä vaikutti epäselvältä, kokeile irtotuntia niin näet miten hauskaa ja helppoa tämä on!
 
-Pistejärjestelmä auttaa seuraamaan edistymistäsi ja suorituksiasi. Mitä enemmän pisteitä tietylle tehtävälle annat, sitä enemmän aikaa ja huomiota olet antanut sille harjoitukselle. Tämä järjestelmä on suunniteltu joustavaksi, joten voit mukauttaa tuntia omien tavoitteidesi mukaan.
+Jos olet estynyt osallistumasta jollekin tunnille, ilmoitathan siitä mahdollisimman pian, jotta joku muu voi ottaa paikkasi. Ilmoita peruuntumista ennen tuntisi alkua [tuntikirjaan]({{ '/toiminta/tuntikirja.html' | relative_url }}).
+
+Pistejärjestelmä auttaa seuraamaan edistymistäsi ja suorituksiasi, pisteillä voit ostaa itsellesi ja tuntihevosellesi tallikaupan puodista esim. herkkuja tai varusteita.
 
 ### Palautteet ja kehitys
-Tuntien jälkeen saat automaattisesti palautteen suorituksistasi. Palautteen avulla voit seurata edistymistäsi ja nähä, mitkä osa-alueet kaipaavat vielä harjoittelua. Ratsastustuntien osallistumiset ja pisteytykset tallentuvat, ja voit palata tarkastelemaan kehitystäsi eri tuntilajien ja tehtävien osalta. Palautteesta selviää myös mitkä taitosi tällä kertaa kehittyivät ja miten paljon.
-
-Ratsastuksenohjaajamme seuraavat aktiivisesti osallistujien edistymistä ja antaa tarvittaessa henkilökohtaisia vinkkejä ja neuvoja, miten kehittyä vielä enemmän.
+Ratsastuksenohjaajamme seuraavat aktiivisesti osallistujien edistymistä ja antaa tarvittaessa henkilökohtaisia vinkkejä ja neuvoja, miten kehittyä vielä enemmän. Jokaisesta kirjoittamastasi tuntitarinasta saat siis lyhyen palautteen ja tietysti pisteitä. Tarina ei tarvitse olla pitkä, mutta sen tulee olla luettavissa ja ymmärrettävissä. 160 merkin "tekstari" tarinat ovat ok! Tarinan pituus ei vaikuta saamasi pisteiden määrään, joten ei tarvitse stressata liikaa. Kirjoitetusta tarinasta saat 10 pistettä.
 
 ### Ilmoittautuminen ja säännöt
-Voit ilmoittautua tunneille suoraan tuntikalenterimme kautta. Valitse sinulle sopiva aika ja tunti, ja varmista paikkasi varausjärjestelmän kautta. Huomaathan, että paikkoja on rajattu määrä, ja ne täytetään ilmoittautumisjärjestyksessä.
+Voit ilmoittautua tunneille suoraan [tuntikirjan]({{ '/toiminta/tuntikirja.html' | relative_url }}) kautta, sen kuin kirjoitat tarinan tuntikirjaan :)! Ei siis tarvitse erikseen ilmoittautua. Toki voit kirjoittaa tarinaan tuletko vain irtotunnille vai haluatko ilmoittautua tuntilistoillemme. Muista kumminkin tarkistaa ennen osallistumista, että hevonen on vapaa!
 
-Mikäli osallistut kerralla koko kaudelle (syksy/kevät) lähetämme sähköpostiisi automaattisesti viikottain tehtävät ja osallistumislinkin jota kautta pääset suorittamaan tuntisi.
+<hr>
 
-Tunneille tulee ilmoittautua viimeistään päivää ennen (mikäli osallistut irtotunnille), jotta voimme varmistaa tuntien sujuvuuden ja tehtävien järjestämisen, sekä ehdimme jakaa kullekin osallistujalle hevoset. Mikäli et pääse osallistumaan, ilmoitathan peruutuksesta mahdollisimman pian, jotta joku muu voi ottaa paikkasi.
+## Tuntihevosten varauslista
+
+Alla näet listan tuntihevosistamme ja niiden tuntivaraustilanteen. Jos hevonen on merkitty vapaaksi, voit ilmoittautua tunnille kirjoittamalla tuntikirjaan. Jos hevonen on varattu, et voi ilmoittautua tunnille.
+
+<div class="horse-reservations" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px; text-align: left;">
+  <div style="background: rgba(255, 255, 255, 0.4); padding: 10px; border: 1px dotted var(--border-color);">
+    <strong>Greenfield's Thunder "Tarmo"</strong><br>
+    <small>Vapaana</small>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.4); padding: 10px; border: 1px dotted var(--border-color);">
+    <strong>Hankien Helmi "Lumikki"</strong><br>
+    <small>Vapaana</small>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.4); padding: 10px; border: 1px dotted var(--border-color);">
+    <strong>Highland Lady "Hilla"</strong><br>
+    <small>Vapaana</small>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.4); padding: 10px; border: 1px dotted var(--border-color);">
+    <strong>Just a Dream "Jade"</strong><br>
+    <small>Vapaana</small>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.4); padding: 10px; border: 1px dotted var(--border-color);">
+    <strong>Kukkakummun Veikeä Ville "Ville"</strong><br>
+    <small>Vapaana</small>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.4); padding: 10px; border: 1px dotted var(--border-color);">
+    <strong>Mynta frá Sauðárkróki "Minttu"</strong><br>
+    <small>Vapaana</small>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.4); padding: 10px; border: 1px dotted var(--border-color);">
+    <strong>Noble Knight "Noppa"</strong><br>
+    <small>Vapaana</small>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.4); padding: 10px; border: 1px dotted var(--border-color);">
+    <strong>Sweetie The Heartbreaker "Herkku"</strong><br>
+    <small>Vapaana</small>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.4); padding: 10px; border: 1px dotted var(--border-color);">
+    <strong>Thunderbolting'n Very Frightening Z "Salama"</strong><br>
+    <small>Vapaana</small>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.4); padding: 10px; border: 1px dotted var(--border-color);">
+    <strong>Tuiskutulinen "Tuisku"</strong><br>
+    <small>Vapaana</small>
+  </div>
+  <div style="background: rgba(255, 255, 255, 0.4); padding: 10px; border: 1px dotted var(--border-color);">
+    <strong>Victorious Quest "Vikke"</strong><br>
+    <small>Vapaana</small>
+  </div>
+</div>
+
+PS. Haluatko ilmoittautua passiviselle tunnille? Kirjoita silloinkin ilmoittautumisesi [tuntikirjaan]({{ '/toiminta/tuntikirja.html' | relative_url }}). Muista kumminkin tarkistaa ennen osallistumista, että hevonen on vapaa!
+
+<hr>
+
+## Tuntilaiset
+
+Alla on lista aktiivisista tuntilaisistamme sekä heidän keräämänsä pisteet tuntikirjauksista.
+
+| Nimi | Sähköposti | Pisteet | Tyyppi | Tuntityyppi | Viimeisin tuntikirjaus |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| Nimi | maili | - | passiivinen | KE I | - |
+| Nimi | maili | 0 | aktiivinen | ES I | pp.kk.vvvv |
+| Nimi | maili | 0 | aktiivinen | ES II | pp.kk.vvvv |
+| Nimi | maili | 0 | aktiivinen | KO I | pp.kk.vvvv |
+
+
 
 <hr>
 
 ## Tuntikirja
 
-Kävitkö tunnilla? Jaa tuntitarinasi muille! Lue muiden kokemuksia ja kirjaa omasi tuntikirjaan.
+Oletko osallistumassa tunnille? Kirjoita tuntitarinasi tuntikirjaan ja saat pisteitä! Lue muiden kirjoituksia ja kirjaa omasi tuntikirjaan.
 
-[📖 Lue tuntikirjaa]({{ '/toiminta/tuntikirja.html' | relative_url }}) &nbsp;|&nbsp; [✏️ Kirjaa tunti]({{ '/toiminta/tuntikirja/kirjoita.html' | relative_url }})
+[Lue tuntikirjaa]({{ '/toiminta/tuntikirja.html' | relative_url }}) - [ Kirjaa tunti]({{ '/toiminta/tuntikirja/kirjoita.html' | relative_url }})

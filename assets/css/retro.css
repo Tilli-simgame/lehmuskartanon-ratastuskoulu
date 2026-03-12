@@ -381,6 +381,50 @@ body.theme-horse-profile .main-content li::before {
   margin-bottom: 8px;
 }
 
+/* Retro Table Styling */
+.main-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border: 2px solid var(--border-color);
+  background-color: #fff;
+  table-layout: fixed; /* Ensures equal column distribution */
+}
+
+/* Time column (first) */
+.main-content th:first-child,
+.main-content td:first-child {
+  width: 12%; 
+  /* The remaining 88% is divided equally among the 7 days (~12.5% each) */
+}
+
+.main-content th {
+  background-color: var(--border-color);
+  color: #fff;
+  padding: 10px 4px; /* Reduced side padding slightly for narrower columns */
+  font-weight: bold;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.main-content td {
+  padding: 8px;
+  border: 1px dotted var(--border-color);
+  text-align: center;
+  font-size: 0.95em;
+}
+
+.main-content tr:nth-child(even) td {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.main-content tr:hover td {
+  background-color: var(--link-hover-bg);
+  color: var(--link-hover-text);
+  cursor: default;
+}
+
 .divider-icon {
   display: block;
   margin: 10px auto;
