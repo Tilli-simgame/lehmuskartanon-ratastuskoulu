@@ -28,8 +28,11 @@
 
                 {% if main_image %}
                 <div class="profile-main-image" style="margin-bottom: 5px;">
-                    <img id="main-horse-image" src="{{ main_image.url }}" alt="{{ page.name }}"
-                        style="width: 100%; max-width: 450px; border: 3px double var(--border-color); padding: 5px; background: #fff;">
+                    <div class="retro-film-container">
+                        <img id="main-horse-image" class="retro-film-effect" src="{{ main_image.url }}" alt="{{ page.name }}"
+                            style="width: 100%; max-width: 450px; border: 3px double var(--border-color); padding: 5px; background: #fff;">
+                        <div class="retro-film-grain"></div>
+                    </div>
                 </div>
                 <div id="image-caption-container" style="margin-bottom: 20px; min-height: 1.2em;">
                     <div id="image-title" style="font-weight: bold; color: var(--heading-color);">{{ main_image.title }}
@@ -43,16 +46,22 @@
                 <div class="profile-gallery"
                     style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 20px;">
                     {% if page.profile_image %}
-                    <img src="{{ page.profile_image.url }}" alt="{{ page.name }}"
-                        data-title="{{ page.profile_image.title | escape }}"
-                        data-description="{{ page.profile_image.description | escape }}" onclick="changeMainImage(this)"
-                        style="max-width: 80px; max-height: 80px; object-fit: cover; border: 2px solid var(--border-color); padding: 2px; background: #fff; cursor: pointer;">
+                    <div class="retro-film-container">
+                        <img src="{{ page.profile_image.url }}" class="retro-film-effect" alt="{{ page.name }}"
+                            data-title="{{ page.profile_image.title | escape }}"
+                            data-description="{{ page.profile_image.description | escape }}" onclick="changeMainImage(this)"
+                            style="max-width: 80px; max-height: 80px; object-fit: cover; border: 2px solid var(--border-color); padding: 2px; background: #fff; cursor: pointer;">
+                        <div class="retro-film-grain"></div>
+                    </div>
                     {% endif %}
                     {% for item in page.gallery %}
                     {% if item.url != page.profile_image.url %}
-                    <img src="{{ item.url }}" alt="{{ page.name }}" data-title="{{ item.title | escape }}"
-                        data-description="{{ item.description | escape }}" onclick="changeMainImage(this)"
-                        style="max-width: 80px; max-height: 80px; object-fit: cover; border: 2px solid var(--border-color); padding: 2px; background: #fff; cursor: pointer;">
+                    <div class="retro-film-container">
+                        <img src="{{ item.url }}" class="retro-film-effect" alt="{{ page.name }}" data-title="{{ item.title | escape }}"
+                            data-description="{{ item.description | escape }}" onclick="changeMainImage(this)"
+                            style="max-width: 80px; max-height: 80px; object-fit: cover; border: 2px solid var(--border-color); padding: 2px; background: #fff; cursor: pointer;">
+                        <div class="retro-film-grain"></div>
+                    </div>
                     {% endif %}
                     {% endfor %}
                 </div>
