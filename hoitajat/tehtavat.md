@@ -1,18 +1,35 @@
 ---
 layout: default
-title: Hoitajat ja tehtävät
+title: Hoitajien olohuone
 theme: hoitajat
 ---
 
-# Hoitajat ja tehtävät
+# Hoitajien olohuone
 
 <hr>
 
-| Hoitajan nimi | Hevonen | Liittymispäivä | Aktiivisuustaso | Taso | Päikky | Maili |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Katri | Tuisku | 01.02.2024 | Aktiivinen | ⭐⭐⭐ | [📝]({{ '/hoitajat/paivakirjat' | relative_url }}) | [💌](mailto:virtuaali@proton.me) |
-| Sanni | Salama | 15.03.2024 | Aktiivinen | ⭐⭐ | [📝]({{ '/hoitajat/paivakirjat' | relative_url }}) | [💌](mailto:virtuaali@proton.me) |
-| Tuomas | Loiste | 01.04.2024 | Epäaktiivinen | ⭐ | [📝]({{ '/hoitajat/paivakirjat' | relative_url }}) | [💌](mailto:virtuaali@proton.me) |
+## Ilmoittautuminen
+Hoitajaksi ei tarvitse erikseen ilmoittautua! Kun olet löytänyt itsellesi sopivan ja vapaana olevan hevosen, voit yksinkertaisesti aloittaa kirjoittamalla ensimmäisen hoitotarinasi kyseisen hevosen hoitopäiväkirjaan. Muista vain tarkistaa ensin huolellisesti hevoslistauksesta, että valitsemasi hevonen on varmasti vapaana eikä sillä ole jo omaa hoitajaa.
+
+## Tasojärjestelmä
+Tallillamme on käytössä 0–5 tähden tasojärjestelmä hoitajille. Tasosi (exp.) nousee sitä mukaa, kun keräät pisteitä kirjoittamistasi hoitotarinoista. Korkeammat tasot avaavat sinulle myös mahdollisuuden ostaa laajempia ja erikoisempia tavaroita ja etuja tallikaupasta.
+
+Jos ajatellaan, että yksi hoitokerta tuottaa karkeasti ottaen 10 exp. ja perushoitaja käy hoitamassa hevostaan suositellut 4 kertaa kuukaudessa (eli n. kerran viikossa), hän kerryttää kuukaudessa noin 40 exp. Tällä tahdilla tähtitason voi saavuttaa ja ylläpitää tasaisen aktiivisella hoitamisella. 
+
+**Tasojen suuntaa-antavat exp-rajat:**
+* **0 tähteä:** 0–20 exp. (Vasta aloittanut tai harvakseltaan käyvä hoitaja)
+* **1 tähti ⭐:** 20–50 exp. (Noin kerran tai kaksi kuukaudessa käyvä)
+* **2 tähteä ⭐⭐:** 50–100 exp. (Aktiivinen, n. kerran viikossa käyvä hoitaja)
+* **3 tähteä ⭐⭐⭐:** 100–250 exp. (Erittäin aktiivinen hoitaja)
+* **4 tähteä ⭐⭐⭐⭐:** 250–500 exp. (Kokenut, pitkään tallilla säännöllisesti pyörinyt konoha)
+* **5 tähteä ⭐⭐⭐⭐⭐:** Yli 500 exp! (Todellinen superhoitaja ja tallin vakiokalustoa)
+
+Mitä aktiivisempi siis olet ja mitä useammin käyt hoitamassa, sitä nopeammin tähtiputkesi kasvaa!
+
+## Palkka ja tallikauppa
+Ahkerointi tallilla palkitaan! Saat kirjoittamistasi hoitotarinoista palkaksi pisteitä, jotka toimivat kätevänä valuuttana tallikaupassamme. Näillä pisteillä voit hemmotella hoitohevostasi ostamalla sille esimerkiksi erikoisherkkuja tai uusia, hienoja varusteita. 
+
+Jokaisesta hoitajan kirjoittamasta tarinasta saat tallin omistajalta lyhyen, kannustavan palautteen ja **10 pistettä**. Tarinan pituus ei vaikuta suoraan saatavien pisteiden määrään, joten älä ota turhaa stressiä tekstin pituudesta! Tärkeintä on, että tarina on luettavissa ja ymmärrettävissä. Jopa lyhyet ja ytimekkäät, noin 160 merkin "tekstari"-tyyliset päivitykset ovat täysin sallittuja ja tuottavat sinulle samat 10 pistettä. Kirjoita siis juuri sellaista päiväkirjaa, joka sopii omaan tyyliisi!
 
 <hr>
 

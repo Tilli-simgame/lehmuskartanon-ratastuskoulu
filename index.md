@@ -78,8 +78,8 @@ title: Lehmuskartanon Ratsastuskoulu
 <div class="nav-section">
   <span class="nav-title">Hoitajat ja työntekijät</span>
   <ul class="nav-list">
-    <li class="nav-item"><img src="{{ '/assets/img/clover4.gif' | relative_url }}" alt="*"> <a href="{{ '/hoitajat/tehtavat' | relative_url }}">Hoitajat ja tehtävät</a></li>
-    <li class="nav-item"><img src="{{ '/assets/img/clover4.gif' | relative_url }}" alt="*"> <a href="{{ '/hoitajat/paivakirjat' | relative_url }}">Hoitopäiväkirjat</a></li>
+    <li class="nav-item"><img src="{{ '/assets/img/clover4.gif' | relative_url }}" alt="*"> <a href="{{ '/hoitajat/tehtavat' | relative_url }}">Hoitajien olohuone</a></li>
+    <li class="nav-item"><img src="{{ '/assets/img/clover4.gif' | relative_url }}" alt="*"> <a href="{{ '/hoitajat/paivakirjat' | relative_url }}">Hoitajalistaus</a></li>
   </ul>
 </div>
 
@@ -90,6 +90,7 @@ title: Lehmuskartanon Ratsastuskoulu
 <div class="nav-section">
   <span class="nav-title">Muuta tärkeää</span>
   <ul class="nav-list">
+    <li class="nav-item">★ <a href="{{ '/muuta/tallikauppa' | relative_url }}">Tallikauppa</a></li>
     <li class="nav-item">★ <a href="{{ '/muuta/ystavyystallit' | relative_url }}">Ystävyystallit</a></li>
     <li class="nav-item">★ <a href="{{ '/vieraskirja' | relative_url }}">Vieraskirja</a> <a href="{{ '/vieraskirja' | relative_url }}"><img src="{{ '/assets/img/guest-s.gif' | relative_url }}" alt="Vieraskirja" border="0" style="vertical-align: middle; margin-left: 5px;"></a></li>
     <li class="nav-item">★ <a href="{{ '/chat' | relative_url }}">Tallichat</a> <img src="{{ '/assets/img/small_horse_icon.gif' | relative_url }}" alt="Chat" border="0" style="vertical-align: middle;"></li>

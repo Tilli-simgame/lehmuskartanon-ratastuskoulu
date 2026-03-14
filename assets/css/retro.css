@@ -387,8 +387,13 @@ body.theme-horse-profile .main-content li::before {
   border-collapse: collapse;
   margin: 20px 0;
   border: 2px solid var(--border-color);
-  background-color: #fff;
+  background-color: transparent;
   table-layout: fixed; /* Ensures equal column distribution */
+}
+
+body.theme-hoitajat .main-content th {
+  color: #000022;
+  text-shadow: none;
 }
 
 /* Time column (first) */
@@ -401,6 +406,7 @@ body.theme-horse-profile .main-content li::before {
 .main-content th {
   background-color: var(--border-color);
   color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   padding: 10px 4px; /* Reduced side padding slightly for narrower columns */
   font-weight: bold;
   border: 1px solid var(--border-color);
@@ -416,7 +422,7 @@ body.theme-horse-profile .main-content li::before {
 }
 
 .main-content tr:nth-child(even) td {
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(128, 128, 128, 0.15);
 }
 
 .main-content tr:hover td {
