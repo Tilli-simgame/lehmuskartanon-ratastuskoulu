@@ -14,6 +14,19 @@
   --main-content-bg: rgba(255, 255, 255, 0.8);
   --border-color: #0000ff;
   --shadow-color: #ff00ff;
+
+  --wr-bg: #ffffff;
+  --wr-text: #1e293b;
+  --wr-border: #dce4ea;
+  --wr-border-width: 1px;
+  --wr-radius: 8px;
+  --wr-header-bg: #334155;
+  --wr-header-text: #ffffff;
+  --wr-align: left;
+  --wr-show-desc: block;
+  --wr-btn-bg: #f1f5f9;
+  --wr-btn-border: #cbd5e1;
+  --wr-btn-text: #1e293b;
 }
 
 body.theme-yleista {
